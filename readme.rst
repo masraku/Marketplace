@@ -1,14 +1,8 @@
 ###################
-What is CodeIgniter
+Web Marketplace dengan tema JKT48
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Web Marketplace ini berbasis CodeIgniter 3 (CI3) yaitu aplikasi berbasis web yang dibangun menggunakan framework PHP CodeIgniter versi 3. Framework ini mengadopsi konsep Model-View-Controller (MVC) yang memisahkan logika bisnis (Model), tampilan antarmuka pengguna (View), dan pengelolaan alur aplikasi (Controller).
 
 *******************
 Release Information
