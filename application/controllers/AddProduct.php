@@ -7,9 +7,10 @@ class AddProduct extends CI_Controller {
         $this->load->library('session');
         $this->load->library('upload');
         $this->load->model('ModelProduct');
-        if ($this->session->userdata('role') !== 'admin') {
-            redirect('login');
-        }
+        if (!$this->session->userdata('logged_in') || 
+        !in_array($this->session->userdata('role'), ['admin', 'superadmin'])) {
+        redirect('login');
+    }
     }
 
     public function index() {
@@ -19,6 +20,32 @@ class AddProduct extends CI_Controller {
         $this->load->view('pages/addproduct');
         $this->load->view('template/footer');
     }
+    public function update($id) {
+        $data = [
+            'nama' => $this->input->post('nama'),
+            'harga' => $this->input->post('harga'),
+            'quantity' => $this->input->post('quantity'),
+        ];
+    
+        if (!empty($_FILES['image']['name'])) {
+            $config['upload_path'] = './assets/images/upload/';
+            $config['allowed_types'] = 'jpg|jpeg|png';
+            $this->load->library('upload', $config);
+    
+            if ($this->upload->do_upload('image')) {
+                $data['image'] = $this->upload->data('file_name');
+            }
+        }
+    
+        if ($this->ModelProduct->update_product($id, $data)) {
+            $this->session->set_flashdata('success', 'Product updated successfully.');
+        } else {
+            $this->session->set_flashdata('error', 'Failed to update product.');
+        }
+    
+        redirect('product');
+    }
+    
     public function save_product() {
         $config['upload_path']   = './assets/images/upload';
         $config['allowed_types'] = 'jpg|jpeg|png|gif';
@@ -37,7 +64,8 @@ class AddProduct extends CI_Controller {
                 'vendor'  => $this->input->post('vendor'),
                 'nama'  => $this->input->post('nama'),
                 'harga' => $this->input->post('harga'),
-                'stok' => $this->input->post('stok'),
+                'deskripsi' => $this->input->post('deskripsi'),
+                'jenis' => $this->input->post('jenis'),
                 'image' => $image_name
             );
     

@@ -1053,15 +1053,6 @@
                                         <span class="col-6 col-sm-6 cart-subtotal-title fs-6"><strong>Total</strong></span>
                                         <span class="col-6 col-sm-6 cart-subtotal-title fs-5 cart-subtotal text-end text-primary"><b class="money">$311.00</b></span>
                                     </div>
-
-                                    <p class="cart-shipping mt-3">Shipping &amp; taxes calculated at checkout</p>
-                                    <p class="cart-shipping fst-normal freeShipclaim"><i class="me-2 align-middle icon anm anm-truck-l"></i><b>FREE SHIPPING</b> ELIGIBLE</p>
-                                    <div class="customCheckbox cart-tearm">
-                                        <input type="checkbox" value="allen-vela" id="cart-tearm">
-                                        <label for="cart-tearm">I agree with the terms and conditions</label>
-                                    </div>
-                                    <a href="checkout-style1.html" id="cartCheckout" class="btn btn-lg my-4 checkout w-100">Proceed To Checkout</a>
-                                    <div class="paymnet-img text-center"><img src="assets/images/icons/safepayment.png" alt="Payment" width="299" height="28" /></div>
                                 </div>                               
                             </div>
                         </div>
@@ -1100,8 +1091,11 @@
                                             <span class="col-6 col-sm-6 cart-subtotal-title fs-5 cart-subtotal text-end text-primary"><b class="money">$311.00</b></span>
                                         </div>
 
-                                        <a href="<?php echo base_url('succes');?>" id="cartCheckout" class="btn btn-lg my-4 checkout w-100">Place order</a>
-                                        <div class="paymnet-img text-center"><img src="assets/images/icons/safepayment.png" alt="Payment" width="299" height="28" /></div>
+                                        <form action="<?php echo site_url('checkout/process_checkout'); ?>" method="POST">
+                                            <button type="submit" class="btn btn-primary">Confirm Checkout</button>
+                                            <div class="paymnet-img text-center"><img src="assets/images/icons/safepayment.png" alt="Payment" width="299" height="28" /></div>
+                                        </form>
+
                                     </div>                               
                                 </div>
                                 <!--Cart Summary-->

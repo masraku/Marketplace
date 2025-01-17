@@ -1,0 +1,86 @@
+/* CSS untuk halaman Edit Product */
+.container {
+    max-width: 900px;
+    margin-left:250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.form-container .form-section {
+    flex: 1;
+}
+
+.form-container .image-section {
+    max-width: 200px;
+    text-align: center;
+}
+
+.form-container .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.button-group {
+    text-align: right;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button-group .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.button-group .btn-success:hover {
+    background-color: #218838;
+}

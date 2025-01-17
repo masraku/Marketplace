@@ -15,8 +15,10 @@
         <link rel="stylesheet" href="<?= base_url('assets/css/plugins.css');?>">
         <!-- Main Style CSS -->
         <link rel="stylesheet" href="<?=base_url('assets/css/style-min.css');?>">
+        <link rel="stylesheet" href="<?php echo base_url('assets/adminlte/plugins/fontawesome-free/css/all.min.css'); ?>">
         <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css');?>">
         <link base href="<?=base_url();?>">
+       
     </head>
 
     <body class="template-index index-demo7">
@@ -236,7 +238,7 @@
                                             </li>
                                             <li class="lvl1 parent dropdown"><a href="#">Pages<i class="icon anm anm-angle-down-l"></i></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="contact-style1.html" class="site-nav">Contact Us <i class="site-nav"></i></a>
+                                                    <li><a href="<?php echo base_url('contactus');?>" class="site-nav">Contact Us <i class="site-nav"></i></a>
                                                     </li>
                                                     <li><a href="contact-style1.html" class="site-nav">About Us <i class="site-nav"></i></a>
                                                     </li>

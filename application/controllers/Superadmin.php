@@ -16,7 +16,9 @@ public function __construct() {
 
 public function index() {
     $data['users'] = $this->ModelPage->get_all_users();
-    $this->load->view('pages/superadmin', $data);
+    $this->load->view('template/sidebar', $data);
+    $this->load->view('template/layout', $data);
+    $this->load->view('template/footer');
 }
 
 public function change_role() {

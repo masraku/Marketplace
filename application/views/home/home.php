@@ -96,12 +96,10 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="<?php echo base_url('product/'. $item->id);?>" class="product-img rounded-4">
+                                        <a href="<?php echo base_url('product/' . $item->slug); ?>" class="product-img rounded-0">
                                             <!-- Image -->
-                                            <img class="primary rounded-4 blur-up lazyload" data-src="<?php echo base_url('assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('assets/images/upload/' . $item->image); ?>" alt="Product" title="Product" width="400" height="400" />
+                                            <img class="primary rounded-0 blur-up lazyload" data-src="<?php echo base_url('assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('assets/images/upload/' . $item->image); ?>" alt="Product" title="Product" width="400" height="400" />
                                             <!-- End Image -->
-                                            <!-- Hover Image -->
-                                            <!-- End Hover Image -->
                                         </a>
                                         <!-- End Product Image -->   
                                         <!-- Product label -->
@@ -120,7 +118,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="<?php echo base_url('product/' . $item->id); ?>"><?php echo $item->nama; ?></a>
+                                                <a href="<?php echo base_url('product/' . $item->slug); ?>"><?php echo $item->nama; ?></a>
                                                 
                                             </div>
                                             <!-- End Product Name -->
@@ -212,7 +210,7 @@
                                                     <!-- Start Product Image -->
                                                     <div class="product-image">
                                                         <!-- Start Product Image -->
-                                                        <a href="<?php echo base_url('product/' . $item->id); ?>" class="product-img rounded-4">
+                                                        <a href="<?php echo base_url('product/' . $item->slug); ?>" class="product-img rounded-4">
                                                             <!-- Image -->
                                                             <img class="primary rounded-4 blur-up lazyload" data-src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" alt="Product" title="Product" width="400" height="400" />
                                                             <!-- End Image -->
@@ -235,7 +233,7 @@
                                                         <div class="product-name-price">
                                                             <!-- Product Name -->
                                                             <div class="product-name">
-                                                                <a href="<?php echo base_url('product/' . $item->id); ?>"><?php echo $item->nama;?></a>
+                                                                <a href="<?php echo base_url('product/' . $item->slug); ?>"><?php echo $item->nama;?></a>
                                                             </div>
                                                             <!-- End Product Name -->
                                                             <!-- Product Price -->
@@ -310,7 +308,7 @@
                                                     <!-- Start Product Image -->
                                                     <div class="product-image">
                                                         <!-- Start Product Image -->
-                                                        <a href="<?php echo base_url('product/' . $item->id); ?>" class="product-img rounded-4">
+                                                        <a href="<?php echo base_url('product/' . $item->slug); ?>" class="product-img rounded-4">
                                                             <!-- Image -->
                                                             <img class="primary rounded-4 blur-up lazyload" data-src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" alt="Product" title="Product" width="400" height="400" />
                                                             <!-- End Image -->
@@ -333,7 +331,7 @@
                                                         <div class="product-name-price">
                                                             <!-- Product Name -->
                                                             <div class="product-name">
-                                                                <a href="<?php echo base_url('product/' . $item->id); ?>"><?php echo $item->nama;?></a>
+                                                                <a href="<?php echo base_url('product/' . $item->slug); ?>"><?php echo $item->nama;?></a>
                                                             </div>
                                                             <!-- End Product Name -->
                                                             <!-- Product Price -->
@@ -411,7 +409,7 @@
                                                     <!-- Start Product Image -->
                                                     <div class="product-image">
                                                         <!-- Start Product Image -->
-                                                        <a href="<?php echo base_url('product/' . $item->id); ?>" class="product-img rounded-4">
+                                                        <a href="<?php echo base_url('product/' . $item->slug); ?>" class="product-img rounded-4">
                                                             <!-- Image -->
                                                             <img class="primary rounded-4 blur-up lazyload" data-src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" alt="Product" title="Product" width="400" height="400" />
                                                             <!-- End Image -->
@@ -434,7 +432,7 @@
                                                         <div class="product-name-price">
                                                             <!-- Product Name -->
                                                             <div class="product-name">
-                                                                <a href="<?php echo base_url('product/' . $item->id); ?>"><?php echo $item->nama;?></a>
+                                                                <a href="<?php echo base_url('product/' . $item->slug); ?>"><?php echo $item->nama;?></a>
                                                             </div>
                                                             <!-- End Product Name -->
                                                             <!-- Product Price -->
@@ -534,9 +532,9 @@
                                 <h4 class="column-ttl">Best Seller</h4>
                                 <div class="mini-product-list">   
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" src="<?php echo base_url('./assets/images/upload/' . $item->image); ?>" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Twoshot with member JKT48</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Twoshot with member JKT48</a></div>
                                             <div class="product-price"><span class="old-price">Rp 200.000</span><span class="price">Rp 180.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
@@ -545,9 +543,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/photocard-3.png" src="assets/images/rakuuu/photocard-3.png" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/photocard-3.png" src="assets/images/rakuuu/photocard-3.png" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Photocard JKT48</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Photocard JKT48</a></div>
                                             <div class="product-price"><span class="price">Rp 50.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
@@ -556,9 +554,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/lightstick.jpg" src="assets/images/rakuuu/lightstick.jpg" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/lightstick.jpg" src="assets/images/rakuuu/lightstick.jpg" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">lightstick JKT48</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">lightstick JKT48</a></div>
                                             <div class="product-price"><span class="price">Rp 180.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
@@ -572,9 +570,9 @@
                                 <h4 class="column-ttl">New Products</h4>
                                 <div class="mini-product-list">   
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/photopack.png" src="assets/images/rakuuu/photopack.png" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/photopack.png" src="assets/images/rakuuu/photopack.png" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Photopack JKT48</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Photopack JKT48</a></div>
                                             <div class="product-price"><span class="old-price">Rp 80.000</span><span class="price">Rp 40.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
@@ -583,9 +581,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/album.png" src="assets/images/rakuuu/album.png" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/album.png" src="assets/images/rakuuu/album.png" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Album AKB48</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Album AKB48</a></div>
                                             <div class="product-price"><span class="price">Rp 250.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
@@ -594,9 +592,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/kaosjkt.png" src="assets/images/rakuuu/kaosjkt.png" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/kaosjkt.png" src="assets/images/rakuuu/kaosjkt.png" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">T-shirt New Era</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">T-shirt New Era</a></div>
                                             <div class="product-price"><span class="price">Rp 180.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
@@ -610,9 +608,9 @@
                                 <h4 class="column-ttl">Top Rated</h4>
                                 <div class="mini-product-list">   
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/riverjkt.jpg" src="assets/images/rakuuu/riverjkt.jpg" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/riverjkt.jpg" src="assets/images/rakuuu/riverjkt.jpg" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">T-shirt River</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">T-shirt River</a></div>
                                             <div class="product-price"><span class="price">Rp 180.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
@@ -621,9 +619,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/sticker.png" src="assets/images/rakuuu/sticker.png" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/sticker.png" src="assets/images/rakuuu/sticker.png" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Sticker</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Sticker</a></div>
                                             <div class="product-price"><span class="price">Rp 15.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
@@ -632,9 +630,9 @@
                                         </div>
                                     </div>
                                     <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->id); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/cheki.jpg" src="assets/images/rakuuu/cheki.jpg" alt="image" title="product" width="85" height="85" /></a></div>
+                                        <div class="mini-image"><a class="item-link" href="<?php echo base_url('product/' . $item->slug); ?>"><img class="primary rounded-5 blur-up lazyload" data-src="assets/images/rakuuu/cheki.jpg" src="assets/images/rakuuu/cheki.jpg" alt="image" title="product" width="85" height="85" /></a></div>
                                         <div class="ms-3 details text-break">
-                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->id); ?>">Cheki with Idol</a></div>
+                                            <div class="product-name"><a class="item-title" href="<?php echo base_url('product/' . $item->slug); ?>">Cheki with Idol</a></div>
                                             <div class="product-price"><span class="price">Rp 40.000</span></div>
                                             <div class="product-review d-flex align-items-center justify-content-start">
                                                 <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>

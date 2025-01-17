@@ -1,0 +1,88 @@
+/* Sidebar Orders */
+.sidebar-orders {
+    margin-left:250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Title */
+.sidebar-orders .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Order List */
+.sidebar-orders .order-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.sidebar-orders .order-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-orders .order-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Info */
+.sidebar-orders .order-info {
+    margin-bottom: 10px;
+}
+
+.sidebar-orders .order-info p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.sidebar-orders .order-info strong {
+    color: #333;
+}
+
+/* Order Button */
+.sidebar-orders .order-item .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-orders .order-item .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar-orders {
+        padding: 15px;
+    }
+
+    .sidebar-orders .sidebar-title {
+        font-size: 1.25rem;
+    }
+
+    .sidebar-orders .order-item {
+        padding: 12px;
+    }
+
+    .sidebar-orders .order-item .btn {
+        font-size: 0.8rem;
+    }
+}

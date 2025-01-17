@@ -66,16 +66,16 @@
 
                                     <!-- JavaScript untuk Update Total Harga -->
                                     <script>
-                                        var total;
                                         document.querySelectorAll('.cart-qty-input').forEach(input => {
                                             input.addEventListener('input', function () {
                                                 const price = parseFloat(this.getAttribute('data-price')) || 0;
                                                 const quantity = parseInt(this.value) || 0;
                                                 const totalElement = this.closest('tr').querySelector('.total');
-                                                
+
                                                 // Hitung Total Harga untuk Item Ini
-                                                total = price * quantity;
+                                                const total = price * quantity;
                                                 totalElement.textContent = `Rp${new Intl.NumberFormat('id-ID').format(total)}`;
+
                                                 // Update Total Keseluruhan (Jika Ada)
                                                 updateGrandTotal();
                                             });
@@ -86,7 +86,7 @@
                                             document.querySelectorAll('.cart-qty-input').forEach(input => {
                                                 const price = parseFloat(input.getAttribute('data-price')) || 0;
                                                 const quantity = parseInt(input.value) || 0;
-                                                grandTotal += total;
+                                                grandTotal += price * quantity;
                                             });
 
                                             // Tampilkan Grand Total (pastikan ada elemen dengan id 'grand-total')

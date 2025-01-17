@@ -21,7 +21,7 @@
                                     <input type="password" name="password" id="password" placeholder="Password"/>
                                 </div>
                                 <div class="form-group form-button">
-                                    <input type="submit" name="login" id="login" class="form-submit" value="Log in"/>
+                                    <input type="submit" name="login" id="login" class="form-submit" value="Login"/>
                                 </div>
                             </form>
                             <div class="login-image">
@@ -36,4 +36,3 @@
     </section>
     </div>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-</html>

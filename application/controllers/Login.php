@@ -21,6 +21,7 @@ class Login extends CI_Controller {
 
         // Periksa login
         $user = $this->ModelPage->check_user($username, $password);
+        //print_r($user);die;
         if ($user) {
             // Simpan data user di session
             $this->session->set_userdata([

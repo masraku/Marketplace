@@ -10,7 +10,7 @@ class MyPage extends CI_Controller {
     {
         $data['username'] = $this->session->userdata('username');
         $this->load->view('template/header');
-        $this->load->view('home/mypage');
+        $this->load->view('home/mypage', $data);
         $this->load->view('template/footer');
     }
 

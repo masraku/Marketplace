@@ -25,8 +25,13 @@
         </div>
 
         <div class="mb-3">
-            <label for="stok" class="form-label">Stock</label>
-            <input type="number" class="form-control" id="stok" name="stok" required>
+            <label for="deskripsi" class="form-label">Description Product</label>
+            <input type="text" class="form-control" id="deskripsi" name="deskripsi" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="jenis" class="form-label">Type</label>
+            <input type="text" class="form-control" id="jenis" name="jenis" required>
         </div>
 
         <div class="mb-3">
@@ -34,6 +39,21 @@
         <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Add Product</button>
+        <div class="d-flex justify-content-between mt-4">
+            <?php if ($this->session->userdata('role') === 'superadmin' || $this->session->userdata('role') === 'admin'): ?>
+                <!-- Tombol Back to Dashboard untuk superadmin -->
+                <?php if ($this->session->userdata('role') === 'superadmin'): ?>
+                    <a href="<?php echo base_url("superadmin"); ?>" class="btn btn-secondary">Back to Dashboard</a>
+                <?php endif; ?>
+
+                <!-- Tombol Add Product untuk admin -->
+                <?php if ($this->session->userdata('role') === 'admin' || $this->session->userdata('role') === 'superadmin'): ?>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+
+
+
     </form>
 </div>
