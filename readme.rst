@@ -45,6 +45,49 @@ Langkah 1: Persiapan Database
 Klik tab Import, lalu unggah file DBMarketplace.sql yang disediakan.
 Klik Go untuk menjalankan proses impor data.
 
+Langkah 2: Konfigurasi CodeIgniter
+-Konfigurasi base_url
+	Buka file konfigurasi utama di application/config/config.php.
+	Temukan baris:
+	php
+	Copy
+	Edit
+	$config['base_url'] = '';
+	Ubah nilainya sesuai dengan nama file atau URL proyek, misalnya:
+	php
+	Copy
+	Edit
+	$config['base_url'] = 'http://localhost/Marketplace/';
+
+-Konfigurasi Database
+	Buka file application/config/database.php.
+	Atur parameter koneksi database sesuai dengan konfigurasi server Anda:
+	php
+	Copy
+	Edit
+	$db['default'] = array(
+	    'dsn'   => '',
+	    'hostname' => 'localhost',
+	    'username' => 'root',
+	    'password' => '', // Jika ada password, tambahkan di sini
+	    'database' => 'DBMarketplace',
+	    'dbdriver' => 'mysqli',
+	    'dbprefix' => '',
+	    'pconnect' => FALSE,
+	    'db_debug' => (ENVIRONMENT !== 'production'),
+	    'cache_on' => FALSE,
+	    'cachedir' => '',
+	    'char_set' => 'utf8',
+	    'dbcollat' => 'utf8_general_ci',
+	    'swap_pre' => '',
+	    'encrypt' => FALSE,
+	    'compress' => FALSE,
+	    'stricton' => FALSE,
+	    'failover' => array(),
+	    'save_queries' => TRUE
+	);
+
+
 *******
 License
 *******
