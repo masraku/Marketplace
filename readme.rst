@@ -4,8 +4,8 @@ Web Marketplace dengan tema JKT48
 
 Web Marketplace ini berbasis CodeIgniter 3 (CI3) yaitu aplikasi berbasis web yang dibangun menggunakan framework PHP CodeIgniter versi 3. Framework ini mengadopsi konsep Model-View-Controller (MVC) yang memisahkan logika bisnis (Model), tampilan antarmuka pengguna (View), dan pengelolaan alur aplikasi (Controller).
 
-![Marketplace}(Documentation/home.png)
-![Marketplace}(Documentation/home-2.png)
+![Marketplace](Documentation/home.png)
+![Marketplace](Documentation/home-2.png)
 
 *******************
 Release Information
