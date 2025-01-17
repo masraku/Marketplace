@@ -33,8 +33,17 @@ issues, as well as missing features.
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+Sebelum memulai pengembangan proyek web Marketplace menggunakan CodeIgniter 3, Anda perlu melakukan instalasi dan konfigurasi awal untuk memastikan aplikasi berjalan dengan baik. Berikut adalah langkah-langkah instalasi yang harus dilakukan:
+
+Langkah 1: Persiapan Database
+-Masuk ke phpMyAdmin
+	Buka browser dan akses phpMyAdmin melalui URL, biasanya http://localhost/phpmyadmin.
+-Buat Database Baru
+	Klik tab Databases, masukkan nama database (misalnya DBMarketplace), lalu klik Create.
+-Import File Database
+	Pilih database DBMarketplace yang telah dibuat.
+Klik tab Import, lalu unggah file DBMarketplace.sql yang disediakan.
+Klik Go untuk menjalankan proses impor data.
 
 *******
 License
