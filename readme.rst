@@ -34,8 +34,13 @@ Installation
 ************
 
 Sebelum memulai pengembangan proyek web Marketplace menggunakan CodeIgniter 3, Anda perlu melakukan instalasi dan konfigurasi awal untuk memastikan aplikasi berjalan dengan baik. Berikut adalah langkah-langkah instalasi yang harus dilakukan:
+persiapan awal : 
+1. download atau clone folder
+2. copy file 
+3. paste file di directory xampp/htdocs
 
 Langkah 1: Persiapan Database
+
 -Masuk ke phpMyAdmin
 	Buka browser dan akses phpMyAdmin melalui URL, biasanya http://localhost/phpmyadmin.
 -Buat Database Baru
@@ -46,25 +51,17 @@ Klik tab Import, lalu unggah file DBMarketplace.sql yang disediakan.
 Klik Go untuk menjalankan proses impor data.
 
 Langkah 2: Konfigurasi CodeIgniter
+
 -Konfigurasi base_url
 	Buka file konfigurasi utama di application/config/config.php.
 	Temukan baris:
-	php
-	Copy
-	Edit
 	$config['base_url'] = '';
 	Ubah nilainya sesuai dengan nama file atau URL proyek, misalnya:
-	php
-	Copy
-	Edit
 	$config['base_url'] = 'http://localhost/Marketplace/';
 
 -Konfigurasi Database
 	Buka file application/config/database.php.
 	Atur parameter koneksi database sesuai dengan konfigurasi server Anda:
-	php
-	Copy
-	Edit
 	$db['default'] = array(
 	    'dsn'   => '',
 	    'hostname' => 'localhost',
